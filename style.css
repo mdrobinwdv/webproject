@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    font-size: 32px;
+    text-align: center;
+    padding: 10px;
+    background-color: skyblue;
+}
+.contnt{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(1, 200px);
+    background-color: aqua;
+}
+.contnt .pic h1{
+    font-size: 4rem;
+    margin-right: 15px;
+}
+.pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid white;
+}
+.contnt .nav{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.contnt .nav a{
+    font-size: 3rem;
+    text-decoration: none;
+    margin-left: 20px;
+    color: red;
+}
+.contnt .nav a:hover{
+    text-decoration: underline;
+    font-size: 4rem;
+    color: black;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.about .abhr h1{
+    font-size: 6rem;
+    color: rgb(9, 198, 9);
+}
+.hr{
+    margin-bottom: 30px;
+}
+.container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: repeat(6, 320px);
+}
+.box:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.container .box .Edu h1{
+    font-size: 2rem;
+    color: black;
+}
+.container .box .Edu table{
+    width: 100%;
+}
+.container .box2 .add h3{
+    font-size: 20px;
+    font-style: none;
+}
+.box2 .add{
+    height: 100%;
+    width: 100%;
+}
+
+
+.box:nth-child(2){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+
+.box h1{
+    color: white;
+    font-style: italic;
+}
